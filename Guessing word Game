@@ -1,0 +1,16 @@
+secret_word="Navneet"
+guess=""
+guess_times=5
+count=0
+out_of_guess=False
+while guess!=secret_word and not(out_of_guess):
+    if count<=guess_times:
+        guess=input("Guess again:")
+        count=count+1
+    else:
+        out_of_guess=True
+if out_of_guess==True:
+    print("Out of guess")
+else:
+    
+    print("U win!")
