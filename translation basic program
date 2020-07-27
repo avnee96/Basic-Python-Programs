@@ -1,0 +1,9 @@
+def trans(line):
+    change=""
+    for letter in line:
+        if letter in "AEIOUaeiou":
+            change=change + "n"
+        else:
+            change=change + letter
+    return change       
+print(trans(input("line:"))) 
